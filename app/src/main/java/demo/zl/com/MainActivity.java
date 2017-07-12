@@ -1,5 +1,6 @@
 package demo.zl.com;
 
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -65,4 +66,14 @@ public class MainActivity extends BaseActivity implements ActionBarClickListener
         actionBar.tvTitle.setVisibility(transAlpha > 48 ? View.VISIBLE : View.GONE);
     }
 
+
+    private void showView(View v) {
+        ObjectAnimator animator = new ObjectAnimator();
+        animator.ofInt();
+    }
+
+
+    private void hideView() {
+
+    }
 }

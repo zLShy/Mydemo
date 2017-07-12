@@ -1,1 +1,1 @@
-include ':app', ':backgroundview'
+include ':app', ':backgroundview', ':listviewitemdeleteanimationlib'

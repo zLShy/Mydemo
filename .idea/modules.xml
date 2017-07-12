@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyDemo1.iml" filepath="$PROJECT_DIR$/MyDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/backgroundview/backgroundview.iml" filepath="$PROJECT_DIR$/backgroundview/backgroundview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listviewitemdeleteanimationlib/listviewitemdeleteanimationlib.iml" filepath="$PROJECT_DIR$/listviewitemdeleteanimationlib/listviewitemdeleteanimationlib.iml" />
     </modules>
   </component>
 </project>
