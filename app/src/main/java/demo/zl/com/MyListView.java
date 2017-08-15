@@ -49,6 +49,7 @@ public class MyListView  extends ListView{
 
 
         return super.onInterceptTouchEvent(ev);
+        
     }
 
     private void startDrag(Bitmap bm, int y) {
