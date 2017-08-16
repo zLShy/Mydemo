@@ -2,6 +2,7 @@ package demo.zl.com;
 
 import android.animation.TypeEvaluator;
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Point;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -16,7 +17,10 @@ public class MyZdy extends View{
         super(context, attrs);
     }
 
-
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+    }
 
     class TypeValue implements TypeEvaluator<Point> {
 
