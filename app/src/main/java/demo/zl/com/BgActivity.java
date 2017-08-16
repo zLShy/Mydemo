@@ -38,4 +38,6 @@ public class BgActivity extends BaseActivity{
         super.onDestroy();
         backgroundView.stopAnimation();
     }
+
+    
 }
