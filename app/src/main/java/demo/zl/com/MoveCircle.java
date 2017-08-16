@@ -37,8 +37,4 @@ public class MoveCircle extends View {
         super.onDraw(canvas);
 
     }
-
-
-
-
 }
