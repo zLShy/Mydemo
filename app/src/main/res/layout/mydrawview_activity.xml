@@ -7,7 +7,12 @@
 
 
     <demo.zl.com.MyView
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <demo.zl.com.MyWeaveView
+        android:id="@+id/myweave"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
 </RelativeLayout>
