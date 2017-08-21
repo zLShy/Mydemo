@@ -39,5 +39,6 @@ public class BgActivity extends BaseActivity{
         backgroundView.stopAnimation();
     }
 
-    
+
+
 }
