@@ -1,5 +1,6 @@
 package demo.zl.com;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,8 +21,12 @@ import android.view.View;
 public class MyView extends View {
     private Paint mPaint;
     private Paint mArcPaint;
+    private Paint mPaintCilcle;
     private float Myact;
-//    double ω = 2*Math.PI / getWidth();
+    private int mWl;
+    private int offset;
+
+    //    double ω = 2*Math.PI / getWidth();
     public MyView(Context context) {
         super(context);
         init();
@@ -36,6 +41,7 @@ public class MyView extends View {
         mArcPaint.setAntiAlias(true);
         mArcPaint.setColor(Color.RED);
         mArcPaint.setStyle(Paint.Style.STROKE);
+        mPaintCilcle = new Paint();
     }
 
     public MyView(Context context, @Nullable AttributeSet attrs) {
@@ -70,5 +76,18 @@ public class MyView extends View {
         canvas.drawTextOnPath("helloworld",mPath,100,20,mArcPaint);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.star);
         canvas.drawBitmap(bitmap,new Matrix(),new Paint());
+
+        ValueAnimator animator = ValueAnimator.ofInt(0,mWl);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+               offset =  (int)valueAnimator.getAnimatedValue();
+                postInvalidate();
+            }
+        });
+
+        animator.start();
     }
+
+
 }

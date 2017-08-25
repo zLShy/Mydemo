@@ -36,7 +36,4 @@ public class MyDrawViewActivity extends BaseActivity{
 
     }
 
-
-
-
 }
